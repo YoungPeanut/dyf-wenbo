@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+                android:background="@color/gray"
+        >
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            layout="@layout/title" android:id="@+id/include2"/>
+
+    <include
+            android:id="@+id/menu_bar"
+            layout="@layout/menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_below="@+id/include2"
+            android:layout_centerHorizontal="true" android:id="@+id/linearLayout">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/find_shenhuo"
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:text="@string/home"
+                    android:textColor="@color/black"
+                    android:id="@+id/find_shenhuo_font"
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                      android:text="生活"
+                      android:textColor="@color/black"
+                      android:id="@+id/find_shenhuo_text"
+                    />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/find_siashi"
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:text="@string/soccer"
+                    android:textColor="@color/black"
+                    android:id="@+id/find_siashi_font"
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="13dp"
+                      android:text="赛事"
+                      android:textColor="@color/black"
+                      android:id="@+id/find_siashi_text"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/find_qinggan"
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:text="@string/heart"
+                    android:textColor="@color/black"
+                    android:id="@+id/find_qinggan_font"
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="13dp"
+                      android:text="情感"
+                      android:textColor="@color/black"
+                      android:id="@+id/find_qinggan_text"
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/find_jineng"
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:text="@string/build"
+                    android:id="@+id/find_jineng_font"
+
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="13dp"
+                      android:text="技能"
+                      android:textColor="@color/black"
+                      android:id="@+id/find_jineng_text"
+
+                    />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/find_zatan"
+
+                >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="23dp"
+                    android:textColor="@color/black"
+                    android:text="@string/free_breakfast"
+                    android:id="@+id/find_zatan_font"
+
+                    />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="13dp"
+                      android:text="杂谈"
+                      android:textColor="@color/black"
+                      android:id="@+id/find_zatan_text"
+
+                    />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_deep"
+            android:id="@+id/find_list"
+            android:layout_below="@+id/linearLayout" android:layout_centerHorizontal="true"
+            android:layout_above="@+id/menu_bar"/>
+
+
+</RelativeLayout>
+

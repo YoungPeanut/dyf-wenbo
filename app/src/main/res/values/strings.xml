@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">文播</string>
+
+    <string name="restaurant">&#xe56c;</string>
+    <string name="person">&#xe7fd;</string>
+    <string name="star_border">&#xe83a;</string>
+    <string name="account_box">&#xe851;</string>
+    <string name="build">&#xe869;</string>
+    <string name="calendar">&#xe900;</string>
+    <string name="coffee">&#xe901;</string>
+    <string name="soccer">&#xe902;</string>
+    <string name="tools">&#xe903;</string>
+    <string name="comments">&#xe904;</string>
+    <string name="dollar">&#xe905;</string>
+    <string name="heart">&#xe906;</string>
+    <string name="like">&#xe907;</string>
+    <string name="thumb_up">&#xe908;</string>
+    <string name="home">&#xe909;</string>
+    <string name="bubble2">&#xe90a;</string>
+    <string name="share2">&#xe90b;</string>
+    <string name="star_full">&#xe90c;</string>
+    <string name="user">&#xe90d;</string>
+    <string name="pets">&#xe91d;</string>
+    <string name="free_breakfast">&#xeb44;</string>
+
+
+</resources>

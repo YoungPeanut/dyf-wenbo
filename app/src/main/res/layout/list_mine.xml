@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:background="@color/white"
+        >
+
+    <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon"
+            android:id="@+id/list_mine_image"
+            />
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:id="@+id/list_mine_title"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:textSize="23dp"
+                android:textColor="@color/black"
+                android:id="@+id/list_mine_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

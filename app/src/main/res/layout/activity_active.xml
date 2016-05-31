@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout4">
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/active_common"
+            >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:text="@string/bubble2"
+                android:textColor="@drawable/select_btn_red"
+                android:id="@+id/active_common_font"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:text="评论"
+                  android:textColor="@drawable/select_btn_red"
+                  android:id="@+id/active_common_text"
+                />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/active_good"
+            >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:text="@string/like"
+                android:textColor="@color/black"
+                android:id="@+id/active_good_font"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:text="点赞"
+                  android:textColor="@color/black"
+                  android:id="@+id/active_good_text"
+                />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/active_collect"
+            >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:text="@string/star_border"
+                android:textColor="@color/black"
+                android:id="@+id/active_collect_font"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:text="收藏"
+                  android:textColor="@color/black"
+                  android:id="@+id/active_collect_text"
+                />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/active_share"
+            >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:textColor="@drawable/select_btn_red"
+                android:text="@string/share2"
+                android:id="@+id/active_share_font"
+
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:text="分享"
+                  android:textColor="@drawable/select_btn_red"
+                  android:id="@+id/active_share_text"
+
+                />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="vertical"
+                  android:gravity="center"
+                  android:id="@+id/active_money"
+
+            >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="23dp"
+                android:textColor="@drawable/select_btn_red"
+                android:text="@string/dollar"
+                android:id="@+id/active_money_font"
+
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textSize="13dp"
+                  android:text="打赏"
+                  android:textColor="@drawable/select_btn_red"
+                  android:id="@+id/active_money_text"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/linearLayout4" android:id="@+id/active_layout">
+
+
+
+
+    </FrameLayout>
+</RelativeLayout>
+

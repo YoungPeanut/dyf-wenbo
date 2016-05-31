@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_sign_two"
+                tools:context=".LoginActivity" >
+
+
+    <ImageButton
+            android:id="@+id/people_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:background="@color/touming"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_icon" />
+
+    <EditText
+            android:id="@+id/regist_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/touming"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="请输入手机号码"
+            android:textColorHint="@color/gray_deep"
+            android:maxLength="11"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20dp" android:layout_below="@+id/people_icon" android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+            android:id="@+id/regist_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regist_phone"
+            android:layout_below="@+id/regist_phone"
+            android:layout_marginTop="22dp"
+            android:background="@color/touming"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:hint="密码"
+            android:maxLength="20"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_deep"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:gravity="center"
+            android:padding="9dp"
+            android:textColor="@color/black"
+            android:background="@drawable/black_grey_back"
+            android:id="@+id/regist_btn" android:layout_below="@+id/regist_pass" android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"/>
+</RelativeLayout>
